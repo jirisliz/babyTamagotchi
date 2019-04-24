@@ -1,7 +1,7 @@
 #include "baby.h"
 
-#define PIN_BTN0  11  // feed 
-#define PIN_BTN1  12  // play
+#define PIN_BTN0  2  // feed 
+#define PIN_BTN1  3  // play
 // both -> clean
 
 CBaby *cBaby;
