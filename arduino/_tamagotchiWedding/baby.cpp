@@ -287,10 +287,9 @@ void CLcd5110::LcdInitialise()
   digitalWrite(PIN_RESET, LOW);
   digitalWrite(PIN_RESET, HIGH);
   LcdWrite(LCD_C, 0x21 );  // LCD Extended Commands.
-  LcdWrite(LCD_C, 0xB1 );  // Set LCD Vop (Contrast).
+  LcdWrite(LCD_C, 0xb1 );  // Set LCD Vop (Contrast).
   LcdWrite(LCD_C, 0x04 );  // Set Temp coefficent. //0x04
-  LcdWrite(LCD_C, 0x14 );  // LCD bias mode 1:48. //0x13
-  LcdWrite(LCD_C, 0x0C );  // LCD in normal mode.
+  LcdWrite(LCD_C, 0x10 );  // LCD bias mode 1:48. //0x13
   LcdWrite(LCD_C, 0x20 );
   LcdWrite(LCD_C, 0x0C );
 }
@@ -521,4 +520,3 @@ void CBaby::updateBaby()
   CBaby::drawBars(happy, 83);
   CBaby::drawBars(hunger, 81);
 }
-
