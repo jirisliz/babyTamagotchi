@@ -24,6 +24,8 @@ class CLcd5110 {
     static void LcdInitialise();
     static void gotoXY(int x, int y);
     static void LcdWrite(char dc, char data);
+    static void LcdString(char*);
+    static void LcdCharacter(char character);
     static void LcdBitmap(char my_array[]);
 
 };
